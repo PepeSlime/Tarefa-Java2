@@ -1,7 +1,9 @@
+-- Criar banco de dados caso não exista
+CREATE DATABASE IF NOT EXISTS application;
 USE application;
 
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
-)
+-- Criar tabela Genero
+CREATE TABLE genero (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+);
